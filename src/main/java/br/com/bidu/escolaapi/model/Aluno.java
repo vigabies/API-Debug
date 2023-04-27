@@ -10,7 +10,7 @@ public class Aluno {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nomealunos;
+    private String nomealuno;
 
     @ManyToOne
     @JoinColumn(name= "curso_id")
@@ -24,14 +24,14 @@ public class Aluno {
         this.id = id;
     }
 
-    //apagando o get and set anterior pq o nome ta errado
+    //get and set
 
-    public String getNomealunos() {
-        return nomealunos;
+    public String getNomealuno() {
+        return nomealuno;
     }
 
-    public void setNomealunos(String nomealunos) {
-        this.nomealunos = nomealunos;
+    public void setNomealuno(String nomealuno) {
+        this.nomealuno = nomealuno;
     }
 
     public Curso getCurso() {
